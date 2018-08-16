@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<title></title>
+		<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="plugins/bootstrap-table/css/bootstrap-table.css" />
+  	<link rel="stylesheet" href="https://cdn.bootcss.com/jquery-treegrid/0.2.0/css/jquery.treegrid.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="plugins/bootstrap/js/html5shiv.js"></script>
+		<script type="text/javascript" src="plugins/bootstrap/js/respond.min.js"></script>
+  	<![endif]-->
+	</head>
+	<body>
+		<div class="pannel-cont">
+			<div class="cont-right">
+				<div class="pannel-navbar clearfix">
+					<div class="navbar-header pull-left">
+						<i class="fa fa-dropbox"></i>
+						<span>字典管理</span>
+					</div>
+					<div class="navbar-btns pull-right">
+						<button class="btn btn-default pull-left btn-showHide">
+							<i class="fa fa-filter"></i><span>隐藏</span>
+						</button>
+						<button class="btn btn-default pull-left" title="新增字典类型" data-url="operateDic.html?typ=add" data-tab-id="addDic" data-back-id="tab7">
+							<i class="fa fa-plus"></i><span>新增</span>
+						</button>
+					</div>
+				</div>
+				<div class="pannel-body">
+					<div class="pannel-search clearfix">
+						<div class="search-group pull-left">
+							<span class="pull-left">字典名称：</span>
+							<input type="text" class="pull-left width-120" name="dicname" autocomplete="off" />
+						</div>
+						<div class="search-group pull-left">
+							<span class="pull-left">字典类型：</span>
+							<input type="text" class="pull-left width-120" name="dictype" autocomplete="off" />
+						</div>
+						<div class="search-group pull-left">
+							<span class="pull-left">是否系统：</span>
+							<div class="control-select width-80 pull-left">
+								<div class="select-val">
+									<input type="text" readonly="readonly" name="isSystem" autocomplete="off" />
+									<i class="fa fa-caret-down"></i>
+								</div>
+								<div class="select-list">
+									<input type="text" />
+									<ul>
+										<li val="1">是</li>
+										<li val="0">否</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="search-group pull-left">
+							<span class="pull-left">状态：</span>
+							<div class="control-select width-80 pull-left">
+								<div class="select-val">
+									<input type="text" readonly="readonly" name="status" autocomplete="off" />
+									<i class="fa fa-caret-down"></i>
+								</div>
+								<div class="select-list">
+									<input type="text" />
+									<ul>
+										<li val="1">正常</li>
+										<li val="0">停用</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="search-group pull-left">
+							<button class="btn btn-primary btn-search pull-left">查询</button>
+							<button class="btn btn-default btn-reset pull-left">重置</button>
+						</div>
+					</div>
+					<div class="pannel-view">
+						<table id="tree-tbl" class="pannel-tbl"></table>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js" ></script>
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery.cookie/1.4.1/jquery.cookie.min.js" ></script>
+		<script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="plugins/bootstrap-table/js/bootstrap-table.js"></script>
+		<script type="text/javascript" src="plugins/bootstrap-table/js/bootstrap-table-zh-CN.js"></script>
+		<script type="text/javascript" src="plugins/bootstrap-table/js/bootstrap-table-treegrid.min.js"></script>
+		<script type="text/javascript" src="https://cdn.bootcss.com/jquery-treegrid/0.2.0/js/jquery.treegrid.min.js"></script>
+		<script type="text/javascript" src="js/tool.js" ></script>
+		<script type="text/javascript" src="js/dictionary.js" ></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+	</body>
+</html>

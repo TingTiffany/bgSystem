@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<title></title>
+		<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="plugins/bootstrap/js/html5shiv.js"></script>
+		<script type="text/javascript" src="plugins/bootstrap/js/respond.min.js"></script>
+  	<![endif]-->
+	</head>
+	<body>
+		<div class="pannel-cont">
+			<div class="pannel-navbar clearfix">
+				<div class="navbar-header pull-left">
+					<i class="fa fa-plus-square"></i>
+					<span>新增岗位</span>
+				</div>
+			</div>
+			<div class="pannel-body">
+				<div class="pannel-view">
+					<div class="view-box">
+						<div class="box-header">基本信息</div>
+						<div class="row">
+							<div class="col-xs-6 box-line">
+								<label class="col-sm-4 text-right">
+									上级岗位：
+								</label>
+								<div class="col-sm-8">
+									<div class="control-tree">
+										<i class="fa fa-user-o"></i>
+										<input type="text" class="control-val padding-left" readonly="readonly" />
+										<span class="btn">
+											<i class="fa fa-search"></i>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6 box-line">
+								<label class="col-sm-4 text-right">
+									<span class="required">*</span>岗位名称：
+								</label>
+								<div class="col-sm-8">
+									<input type="text" name="postName" data-toggle="tooltip" title="必填信息" />
+								</div>
+							</div>
+							<div class="col-xs-6 box-line">
+								<label class="col-sm-4 text-right">
+									岗位排序：
+								</label>
+								<div class="col-sm-8">
+									<input type="text" name="postSn" data-toggle="tooltip" title="只能填非负整数" />
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 box-line">
+								<label class="col-sm-2 text-right">
+									岗位职责：
+									<i class="fa fa-question-circle-o" title="描写岗位职责"></i>
+								</label>
+								<div class="col-sm-10">
+									<textarea rows="4"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="row box-footer">
+							<div class="col-sm-offset-2 col-sm-10 clearfix">
+								<button class="btn btn-primary btn-save pull-left">
+									<i class="fa fa-check"></i>
+									<span>保存</span>
+								</button>
+								<button class="btn btn-default btn-close pull-left">
+									<i class="fa fa-reply-all"></i>
+									<span>关闭</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js" ></script>
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery.cookie/1.4.1/jquery.cookie.min.js" ></script>
+		<script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/formCheck.js" ></script>
+		<script type="text/javascript" src="js/tool.js" ></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$.formCheckFn.init({'isNull':[$('.view-box input[name="postName"]')], 'isNumber':[$('.view-box input[name="postSn"]')]});
+			});
+			$('.view-box').off('click', '.control-tree>.btn').on('click', '.control-tree>.btn', function(){
+				parent.showZtreeLayer({
+					'btn': $(this),
+					'title': '上级岗位',
+					'url': 'json/organization.json'
+				});
+			});
+			$('.box-footer').off('click', '.btn-save').on('click', '.btn-save', function(){
+				if(!$.formCheckFn.isNull($('.view-box input[name="postName"]')) && $.formCheckFn.isNumber($('.view-box input[name="postSn"]'))){
+					parent.showLoading('正在提交，请稍后');
+					setTimeout(function(){
+						parent.hideLoading();	
+						parent.removeNavTab($('.tab-cont li.active', parent.document));
+					}, 2000);
+				}
+			}).off('click', '.btn-close').on('click', '.btn-close', function(){
+				
+			});
+		</script>
+	</body>
+</html>

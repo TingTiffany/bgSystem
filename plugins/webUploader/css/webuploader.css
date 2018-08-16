@@ -1,0 +1,105 @@
+.webuploader-container {
+	position: relative;
+}
+.webuploader-element-invisible {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px,1px,1px,1px);
+}
+.webuploader-pick {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	background: #00b7ee;
+	padding: 10px 15px;
+	color: #fff;
+	text-align: center;
+	border-radius: 3px;
+	overflow: hidden;
+}
+.webuploader-pick-hover {
+	background: #00a2d4;
+}
+
+.webuploader-pick-disable {
+	opacity: 0.6;
+	pointer-events:none;
+}
+
+/*上传文件 样式start*/
+.upload-attach .fa{
+	margin-right: 3px;
+}
+.upload-attach .webuploader-pick{
+	padding: 0;
+	color: #444;
+	background: transparent;
+	overflow: auto;
+}
+.upload-list{
+	width: 600px;
+	max-height: 600px;
+	padding-left: 15px;
+	padding-right: 5px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.upload-list>.item{
+	position: relative;
+  padding-top: 6px;
+	padding-bottom: 6px;
+	border-bottom: 1px solid #C0C0C0;
+}
+.upload-list>.item>.title{
+	display: inline-block;
+  max-width: 85%;
+	margin-right: 3px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.upload-list>.item>.state{
+	display: inline-block;
+  vertical-align: middle;
+}
+.upload-list>.item>.state.error{
+	color: #efcd56;
+}
+.upload-list>.item>.state.success{
+	color: #7abd7b;
+}
+.upload-list>.item>.state>img{
+	width: 20px;
+}
+.upload-list>.item>.btn-delFil{
+	position: absolute;
+	top: 7px;
+	right: 0px;
+	font-size: 18px;
+	color: #e1735f;
+	cursor: pointer;
+}
+.upload-list .progress{
+	height: 10px;
+	margin-bottom: 0px;
+}
+/*上传文件 样式end*/
+
+/*上传图片 样式start*/
+.upload-list>.item-img{
+	padding-top: 12px;
+	padding-bottom: 0px;
+}
+.upload-list>.item-img>img{
+	width: 110px;
+	height: 110px;
+	margin-right: 3px;
+}
+.upload-list>.item-img>.title{
+	max-width: 400px;
+}
+.upload-list>.item-img>.btn-delFil{
+	top: 58px;
+}
+/*上传图片 样式end*/

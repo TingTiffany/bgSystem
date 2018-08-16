@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<title></title>
+		<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="plugins/webUploader/css/webuploader.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="plugins/bootstrap/js/html5shiv.js"></script>
+		<script type="text/javascript" src="plugins/bootstrap/js/respond.min.js"></script>
+  	<![endif]-->
+	</head>
+	<body>
+		<div class="pannel-cont">
+			<div class="cont-right">
+				<div class="clearfix">
+					<div class="pull-left" id="barCharts" style="width:600px; height:400px;"></div>
+					<div class="pull-left" id="lineCharts" style="width:600px; height:400px;"></div>
+					<div class="pull-left" id="pieCharts" style="width:600px; height:400px;"></div>	
+					<!--<div class="pull-left" style="width: 600px;">
+						<a href="javascript:;" class="upload-attach">
+							<i class="fa fa-paperclip"></i>添加文件
+						</a>
+						<ul class="upload-list"></ul>
+						<button class="btn" onclick="uploadFile()">添加文件</button>
+					</div>
+					<div class="pull-left" style="width: 600px;">
+						<a href="javascript:;" class="upload-attach">
+							<i class="fa fa-paperclip"></i>添加图片
+						</a>
+						<ul class="upload-list"></ul>
+						<button class="btn" onclick="uploadImg()">添加图片</button>
+					</div>-->
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js" ></script>
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery.cookie/1.4.1/jquery.cookie.min.js" ></script>
+		<script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/build/dist/echarts-all.js"></script>
+    <script type="text/javascript" src="plugins/webUploader/js/webuploader.min.js"></script>
+		<script type="text/javascript" src="js/tool.js" ></script>
+    <script type="text/javascript" src="plugins/webUploader/js/upload.js"></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+		<script type="text/javascript" src="js/echarts.js" ></script>
+		<script type="text/javascript">
+			/*$.fn.uploadFile({
+				'server': '',
+				'multiple': true,
+				'fileNumLimit': null
+			});
+			function uploadFile(){
+				var opt = {
+						'title': '上传文件',
+						'content': '<a href="javascript:;" class="upload-attach"> <i class="fa fa-paperclip"></i>添加文件 </a> <ul class="upload-list"></ul>'
+						},
+						opts = {
+							'server': '',
+							'multiple': true,
+							'fileNumLimit': null
+						};
+				parent.showUploadFileLayer(opt, undefined, opts, undefined);
+			}
+			
+			$.fn.uploadImg({
+				'server': '',
+				'multiple': true,
+				'fileNumLimit': null,
+				'fileSingleSizeLimit': null,
+				'thumbWidth': 200,
+				'thumbHeight': 200
+			});
+			function uploadImg(){
+				var opt = {
+						'title': '上传图片',
+						'content': '<a href="javascript:;" class="upload-attach"> <i class="fa fa-paperclip"></i>添加图片 </a> <ul class="upload-list"></ul>'
+						},
+						opts = {
+							'server': '',
+							'multiple': true,
+							'fileNumLimit': null,
+							'fileSingleSizeLimit': null,
+							'thumbWidth': 200,
+							'thumbHeight': 200
+						};
+				parent.showUploadImgLayer(opt, undefined, opts, undefined);
+			}*/
+			
+		</script>
+	</body>
+</html>

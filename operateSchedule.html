@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<title></title>
+		<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="plugins/bootstrap/js/html5shiv.js"></script>
+		<script type="text/javascript" src="plugins/bootstrap/js/respond.min.js"></script>
+  	<![endif]-->
+	</head>
+	<body>
+		<div class="pannel-cont">
+			<div class="cont-right">
+				<div class="pannel-navbar clearfix">
+					<div class="navbar-header pull-left">
+						<i class="fa fa-clock-o"></i>
+						<span>新增作业调度</span>
+					</div>
+				</div>
+				<div class="pannel-body">
+					<div class="pannel-view">
+						<div class="view-box">
+							<div class="box-header">基本信息</div>
+							<div class="row">
+								<div class="col-xs-6 box-line">
+									<label class="col-sm-4 text-right">
+										<span class="required">*</span>任务名称：
+									</label>
+									<div class="col-sm-8">
+										<div class="input-group">
+											<input type="text" class="form-control" name="tasknam" data-toggle="tooltip" title="必填信息" />
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-6 box-line">
+									<label class="col-sm-4 text-right">
+										<span class="required">*</span>任务分组：
+									</label>
+									<div class="col-sm-8">
+										<div class="input-groups" name="groupNam">
+											<label><input type="radio" name="job_group" value="DEFAULT" data-toggle="tooltip" title="必填信息">默认</label>
+											<label><input type="radio" name="job_group" value="SYSTEM">系统</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12 box-line">
+									<label class="col-sm-2 text-right">
+										<span class="required">*</span>任务描述：
+									</label>
+									<div class="col-sm-10">
+										<div class="input-group">
+											<input type="text" class="form-control" name="taskDescr" data-toggle="tooltip" title="必填信息" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12 box-line">
+									<label class="col-sm-2 text-right">
+										<span class="required">*</span>调用目标串：
+									</label>
+									<div class="col-sm-10">
+										<div class="input-group">
+											<input type="text" class="form-control" name="targetStr" data-toggle="tooltip" title="必填信息" />
+										</div>
+										<div class="alert alert-info">
+											<ul>
+												<li>Bean调用：Bean名或Bean类型名.方法名(参数1, 参数2, 参数n...) 示例：testDataService.executeTestTask(data, 1, 2L, 3F, 4D, 'abc')</li>
+												<li>静态类调用：静态类全名.方法名(参数1, 参数2, 参数n...)	示例： com.jeesite.common.config.Global.getConfig('productName')</li>
+												<li>参数说明：支持Bean名参数、数值类型参数、字符串参数，字符串参数需要加单引号。</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12 box-line">
+									<label class="col-sm-2 text-right">
+										<span class="required">*</span>Cron执行表达式：
+									</label>
+									<div class="col-sm-10">
+										<iframe id="cron" src="plugins/cron/index.htm" width="840px" height="580px" frameborder="0"></iframe>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12 box-line">
+									<label class="col-sm-2 text-right">
+										<span class="required">*</span>计划错误策略：
+									</label>
+									<div class="col-sm-10">
+										<div class="input-groups" name="wrongPlan">
+											<label><input type="radio" name="job_error_strategy" value="1" data-toggle="tooltip" title="必填信息">错过计划等待本次计划完成后立即执行一次</label>
+											<label><input type="radio" name="job_error_strategy" value="2">不处理</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12 box-line">
+									<label class="col-sm-2 text-right">
+										<span class="required">*</span>是否并发执行：
+									</label>
+									<div class="col-sm-10">
+										<div class="input-groups" name="isConcurrency">
+											<label><input type="radio" name="is_concurrent_exc" value="1" data-toggle="tooltip" title="必填信息">是</label>
+											<label><input type="radio" name="is_concurrent_exc" value="0">否</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="box-header">其它信息</div>
+							<div class="row">
+								<div class="col-xs-12 box-line">
+									<label class="col-sm-2 text-right">
+										备注信息：
+									</label>
+									<div class="col-sm-10">
+										<textarea rows="4" name="descr"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="row box-footer">
+								<div class="col-sm-offset-2 col-sm-10 clearfix">
+									<button type="submit" class="btn btn-primary btn-save pull-left">
+										<i class="fa fa-check"></i>
+										<span>保存</span>
+									</button>
+									<button type="button" class="btn btn-default btn-close pull-left">
+										<i class="fa fa-reply-all"></i>
+										<span>关闭</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js" ></script>
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery.cookie/1.4.1/jquery.cookie.min.js" ></script>
+		<script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/formCheck.js" ></script>
+		<script type="text/javascript" src="js/tool.js" ></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+		<script type="text/javascript" src="js/operateSchedule.js" ></script>
+	</body>
+</html>

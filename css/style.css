@@ -1,0 +1,494 @@
+html, body{
+	height: 100%;
+	font-family: "微软雅黑";
+	background-color: #f4f6f8;
+	overflow: hidden;
+}
+ul, li{
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+}
+a, a:hover, a:focus{
+	text-decoration: none;
+}
+a,
+button,
+.btn,
+.btn.active.focus, 
+.btn.active:focus, 
+.btn.focus, 
+.btn:active.focus, 
+.btn:active:focus, 
+.btn:focus{
+	outline: none;
+}
+.width-80{
+	width: 80px!important;
+}	
+.width-100{
+	width: 100px!important;
+}	
+.width-120{
+	width: 120px!important;
+}	
+.width-150{
+	width: 150px!important;
+}	
+.width-180{
+	width: 180px!important;
+}	
+.width-200{
+	width: 200px!important;
+}	
+.width-100p{
+	width: 100%!important;
+}
+
+.pannel-cont{
+	position: relative;
+	width: 100%;
+	height: 100%;
+  color: #444;
+	background-color: #fff;
+}
+.pannel-cont>.cont-left{
+	position: absolute;
+	width: 180px;
+	overflow: hidden;
+  z-index: 1;
+}
+.pannel-cont>.cont-left .pannel-view{
+	width: 100%;
+  padding-bottom: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.pannel-cont>.cont-right{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.pannel-cont>.cont-left+.cont-right{
+	padding-left: 188px;
+}
+
+/*收缩条样式start*/
+.pannel-cont>.cont-resizer{
+  position: absolute;
+  top: 0;
+  left: 180px;
+  width: 8px;
+  height: 100%;
+  background-color: #fafafa;
+  z-index: 1;
+}
+.pannel-cont>.cont-resizer>.resizer-toggler{
+	position: absolute;
+	top: 50%;
+	width: 8px;
+	height: 50px;
+	margin-top: -25px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #eee;
+	cursor: pointer;
+}
+.pannel-cont>.cont-resizer>.resizer-toggler:hover{
+	background-color: #FC6;
+}
+/*收缩条样式end*/
+
+/*标题栏样式start*/
+.pannel-cont .pannel-navbar{
+  padding: 0px 10px 0px 15px;
+	border-bottom: 1px solid #eee;
+}
+.pannel-navbar>.navbar-header{
+	padding-top: 12px;
+	padding-bottom: 12px;
+	font-size: 16px;
+}
+.pannel-navbar>.navbar-btns>.btn{
+	margin: 6.5px 0 6.5px 5px;
+}
+.pannel-navbar>.navbar-btns .fa{
+	margin-right: 5px;
+}
+.cont-left>.pannel-navbar>.navbar-btns>.fa{
+	margin-left: 5px;
+  line-height: 46px;
+  color: #97a0b3;
+  cursor: pointer;
+}
+.cont-left>.pannel-navbar>.navbar-btns>.fa:hover{
+	color: #606c84;
+}
+/*标题栏样式end*/
+
+.pannel-cont .pannel-body{
+	padding: 10px;
+}
+/*查询条件样式start*/
+.pannel-body>.pannel-search{
+	padding: 3px 3px 3px 8px;
+}
+.pannel-search>.search-group{
+	margin-right: 10px;
+	margin-bottom: 10px;
+	font-size: 13px;
+}
+.search-group>span{
+	line-height: 30px;
+}
+.search-group>input{
+	height: 30px;
+	padding: 3px 0 3px 3px;
+	border: 1px solid #d2d6de;
+	outline: none;
+}
+.search-group>input:focus{
+	border-color: #3c8dbc;
+}
+.search-group>.btn{
+	height: 30px;
+	padding: 4px 12px;
+	font-size: 12px;
+}
+.search-group>.btn+.btn{
+	margin-left: 6px;
+}
+/*查询条件样式end*/
+
+/*表格样式start*/
+.pannel-view .fixed-table-header,
+.pannel-view .table>thead>tr>th,
+.pannel-view .table>thead>tr>th:hover{
+	background-color: #f2f2f2;
+}
+.pannel-view .table>thead>tr>th{
+	text-align: center!important;
+	font-weight: normal;
+}
+.pannel-view .pannel-tbl>tbody>tr>td{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.pannel-view .pannel-tbl>tbody>tr:hover>td,
+.pannel-view .pannel-tbl>tbody>tr.selected>td{
+  background-color: #e3edf5;
+}
+.pannel-view .pannel-tbl .treegrid-expander{
+	height: 13px;
+}
+.pannel-view .fixed-table-pagination div.pagination, 
+.pannel-view .fixed-table-pagination .pagination-detail{
+	margin-bottom: 0px;
+}
+/*表格样式end*/
+
+/*表格图标样式start*/
+.pannel-view .pannel-tbl>tbody>tr>td>.btn-green{
+	color: #80b662;
+}
+.pannel-view .pannel-tbl>tbody>tr>td>.btn-green:hover{
+	color: #69aa46;
+}
+.pannel-view .pannel-tbl>tbody>tr>td>.btn-red{
+	color: #e1735f;
+}
+.pannel-view .pannel-tbl>tbody>tr>td>.btn-red:hover{
+	color: #dd5a43;	
+}
+.pannel-view .pannel-tbl>tbody>tr>td>.td-btn{
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.pannel-view .pannel-tbl>tbody>tr>td>.td-btn:hover{
+	-webkit-transform: scale(1.3);
+	-moz-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	-o-transform: scale(1.3);
+	transform: scale(1.3);
+}
+.pannel-view .pannel-tbl>tbody>tr>td>.btn-more.active{
+	-webkit-transform: scale(1.3) rotate(180deg);
+	-moz-transform: scale(1.3) rotate(180deg);
+	-ms-transform: scale(1.3) rotate(180deg);
+	-o-transform: scale(1.3) rotate(180deg);
+	transform: scale(1.3) rotate(180deg);
+}
+.pannel-view .pannel-tbl>tbody>tr>td>.td-morebtn{
+	display: none;
+  position: absolute;
+  padding: 5px 0 0 5px;
+  white-space: nowrap;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 2px 2px 15px #ccc;
+  background: #fff;
+  z-index: 1;
+}
+.pannel-view .pannel-tbl>tbody>tr>td>.td-morebtn>.btn-default{
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 1px 5px;
+}
+.pannel-view .pannel-tbl>tbody>tr>td>.td-morebtn .fa{
+	margin-right: 2px;
+	line-height: 20px;
+}
+.pannel-view .pannel-tbl>thead>tr>th .asc{
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkI5RDM2QkM2NEVBQjExRThCQUMzRkREQzRFQ0JEMzg3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkI5RDM2QkM3NEVBQjExRThCQUMzRkREQzRFQ0JEMzg3Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QjlEMzZCQzQ0RUFCMTFFOEJBQzNGRERDNEVDQkQzODciIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QjlEMzZCQzU0RUFCMTFFOEJBQzNGRERDNEVDQkQzODciLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz74MP83AAAApElEQVR42mL8//8/A7UAEwMVAQs2QUZGRjjbZdYTLiDVBsRle9JkfsHEsfmIGJdlA3EWEKcSUsiIzQaYy4Cu0gJSO4FYBojvALEH0HV3SXYZ0CCQicVQg0BABYjzoOIkR4ADEAeiiSUCsTVJhrnOfMILpGqBWBBNCiReA3QdO9GGsf/9H8L4H+yCH+gY6EdHtr//g4iOgEGRaEcNGzWMHoYBBBgAVBYw2qLYsUYAAAAASUVORK5CYII=);
+}
+.pannel-view .pannel-tbl>thead>tr>th .desc{
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjIyNUMyMzJENEVBQzExRThBQTA1OEI1MDU3NEJFQjJBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjIyNUMyMzJFNEVBQzExRThBQTA1OEI1MDU3NEJFQjJBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjI1QzIzMkI0RUFDMTFFOEFBMDU4QjUwNTc0QkVCMkEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MjI1QzIzMkM0RUFDMTFFOEFBMDU4QjUwNTc0QkVCMkEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4HOAGTAAAAlElEQVR42mL8//8/A7UAEwMVwahho4bRwzAWbIKus59GAqkFQPwPhwMydqdKzyfWZeuAeD8Qc2DBR4F4DdHe3JMm8xNItQDxZzSp90DcDJT/TGqYgVyA7pX1QHyA5AgA2g4qTiYB8R2o0BMg7oWKkx6bQI13gdQEIP4NMhjIv0ZybKKB2UCsCsRTCSlkHLSFI0CAAQDzbyhHkVmPuwAAAABJRU5ErkJggg==);	
+}
+/*表格图标样式end*/
+
+/*新增编辑页面样式start*/
+.view-box>.box-header{
+  margin: 8px 10px 25px 0px;
+  padding-bottom: 5px;
+  font-size: 15px;
+  font-style: oblique;
+  color: #6379bb;
+  border-bottom: 1px solid #ddd;
+}
+.view-box>.row{
+	margin-right: 55px;
+	margin-bottom: 15px;
+}
+.view-box .box-line{
+	padding: 0;
+}
+.view-box .box-line>label{
+  margin-bottom: 0px;
+	padding-right: 0;
+  line-height: 30px;
+	font-weight: normal;
+}
+.view-box .box-line>label>.fa{
+	font-size: 18px;
+	vertical-align: text-bottom;
+}
+.view-box .box-line.error>label{
+	color: #e02222;
+}
+.view-box .box-line .required{
+	margin-right: 4px;
+	color: #e02222;
+}
+.view-box .box-line input,
+.view-box .box-line textarea{
+	width: 100%;
+	padding: 3px 6px;
+	border: 1px solid #d2d6de;
+	outline: none;
+}
+.view-box .box-line input:focus,
+.view-box .box-line textarea:focus{
+	border-color: #3c8dbc;
+}
+.view-box .box-line.error .input-group,
+.view-box .box-line.error input,
+.view-box .box-line.error textarea{
+	border-color: #e02222;
+}
+.view-box .box-line input{
+	height: 30px;
+}
+.view-box>.box-footer{
+	margin-right: 0;
+	padding: 10px 0;
+  border-top: 1px solid #f4f4f4;
+}
+.view-box>.box-footer .btn{
+	margin-left: 15px;
+}
+.view-box .box-line.error .input-groups{
+	color: #e02222;
+}
+.view-box .box-line .input-groups>label{
+	line-height: 30px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	font-weight: normal;
+}
+.view-box .box-line .input-groups input{
+	width: 16px;
+  height: 16px;
+  margin-top: 0;
+  margin-right: 3px;
+  vertical-align: text-bottom;
+}
+.view-box .bootstrap-table{
+	margin-bottom: 20px;
+}
+.view-box .tree-menu{
+  width: 300px;
+	margin-bottom: 20px;
+  background-color: #FAFAFA;
+}
+.view-box .tree-menu>div{
+	padding: 10px;
+}
+.view-box .tree-menu label{
+	margin-bottom: 0;
+}
+.view-box .tree-menu #all{
+	width: 18px;
+  height: 18px;
+  margin-top: 0;
+  margin-right: 4px;
+  vertical-align: text-bottom;
+}
+.view-box .tree-menu .tree-btn{
+	color: #97a0b3;
+  padding: 5px;
+}
+.view-box .tree-menu .tree-btn:hover{
+  color: #606c84;
+  border-radius: 5px;
+	background-color: #e1e1e1;
+}
+.view-box .tree-menu>.ztree{
+	padding: 0 10px 10px;
+}
+/*新增编辑页面样式end*/
+
+/*下拉选择列表样式start*/
+.pannel-cont .control-select{
+	position: relative;
+}
+.control-select>.select-val{
+	position: relative;
+	width: 100%;
+  z-index: 1002;
+}
+.control-select>.select-val>input{
+	width: 100%;
+	height: 30px;
+	padding: 0px 20px 0px 3px;
+	line-height: 30px;
+  border: 1px solid #d2d6de;
+}
+.control-select>.select-val>.fa{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 20px;
+	line-height: 30px;
+	text-align: center;
+}
+.control-select>.select-list{
+	display: none;
+	position: absolute;
+	top: 29px;
+	width: 100%;
+	padding: 4px;
+	z-index: 1001;
+  border: 1px solid #d2d6de;
+	background-color: #fff;
+}
+.control-select>.select-list>input{
+	width: 100%;
+  height: 28px;
+  padding: 3px 4px;
+  border: 1px solid #3c8dbc;
+  outline: none;
+}
+.control-select>.select-list>ul{
+	max-height: 260px;
+	margin: 4px -4px -4px -4px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.control-select>.select-list>ul>li{
+	height: 26px;
+	padding: 4px 6px;
+	cursor: pointer;
+}
+.control-select>.select-list>ul>li.seld,
+.control-select>.select-list>ul>li.seld:hover{
+	color: #444;
+	background-color: #ddd;
+}
+.control-select>.select-list>ul>li:hover{
+	color: #fff;
+	background-color: #3c8dbc;
+}
+/*下拉选择列表样式end*/
+
+/*弹出ztree的input框样式start*/
+.pannel-cont .input-group{
+	width: 100%;
+	height: 30px;
+	border: 1px solid #d2d6de;
+}
+.input-group>.input-group-addon{
+	display: table-cell;
+	width: 30px;
+	height: 100%;
+	padding: 0;
+	text-align: center;
+  border: none;
+	border-radius: 0;
+  background-color: #fff!important;
+}
+.input-group>.input-group-addon:first-child{
+	border-right: 1px solid #d2d6de;
+}
+.input-group>.input-group-addon:last-child{
+	border-left: 1px solid #d2d6de;
+}
+.input-group>.form-control,
+.view-box .box-line .form-control{
+	display: table-cell;
+  height: 100%;
+  width: 100%;
+  padding: 0 4px;
+  border: none;
+  outline: none;
+  background-color: #fff!important;
+  box-shadow: none;
+}
+.input-group>.input-group-btn{
+	display: table-cell;
+	width: 35px;
+	height: 100%;
+	font-size: 14px;
+	text-align: center;
+	border-left: 1px solid #d2d6de;
+	border-radius: 0;
+	background-color: #f4f4f4;
+	cursor: pointer;
+}
+.input-group>.input-group-btn:hover,
+.input-group>.input-group-btn:active{
+	background-color: #e7e7e7;	
+}
+.input-group>.input-group-addon>i,
+.input-group>.input-group-btn>i{
+	font-size: 16px;
+}
+.input-group>.input-group-addon>.fa-mobile{
+	font-size: 24px;
+}
+/*弹出ztree的input框样式end*/
+
+/*提示工具 样式start*/
+.tooltip.bottom{
+	margin-top: -5px;
+}
+.tooltip.bottom .tooltip-arrow{
+	border-bottom-color: #ff6969;
+}
+.tooltip.bottom .tooltip-inner{
+	background-color: #ff6969;
+}
+/*提示工具 样式end*/
+

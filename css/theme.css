@@ -1,0 +1,230 @@
+/* 主题蓝色样式 */
+.sk-blue .main-header>.logo>.fa-bars:hover,
+.sk-blue .main-header>.logo>.fa-bars:focus,
+.sk-blue .main-header>.custom-menu li.open,
+.sk-blue .main-header>.custom-menu li:hover,
+.sk-blue .main-header>.custom-menu li:focus{
+  background-color: #367fa9;
+}
+.sk-blue .main-sidebar{
+	background-color: #263238;
+}
+.sk-blue .main-sidebar>.sidebar-menu>li>a{
+	color: #b8c7ce;
+}
+.sk-blue .main-sidebar>.sidebar-menu>li>.sidebar-submenu li>a{
+	color: #abb1b7;
+}
+.sk-blue .main-sidebar>.sidebar-menu>li:hover>a,
+.sk-blue .main-sidebar>.sidebar-menu>li>.sidebar-submenu,
+.sk-blue .main-sidebar>.sidebar-menu>li>.sidebar-submenu li>a:hover,
+.sk-blue .main-sidebar>.sidebar-menu>li.active>a,
+.sk-blue .main-sidebar>.sidebar-menu>li>.sidebar-submenu li.active>a{
+  background-color: #2c3b41;
+}
+.sk-blue .main-header,
+.sk-blue .main-sidebar,
+.sk-blue .main-sidebar .user-info>a,
+.sk-blue .main-sidebar>.sidebar-menu>li:hover>a,
+.sk-blue .main-sidebar>.sidebar-menu>li>.sidebar-submenu li>a:hover,
+.sk-blue .main-sidebar>.sidebar-menu>li.active>a,
+.sk-blue .main-sidebar>.sidebar-menu>li>.sidebar-submenu li.active>a{
+	color: #fff;
+}
+.sk-blue .main-header,
+.sk-blue .main-sidebar>.sidebar-menu>li>.sidebar-submenu li.menu-leaf.active>a{
+  background-color: #3c8dbc;
+}
+
+/* 主题蓝灰色样式 */
+.sk-blue-gray .main-header{
+	color: #fff;
+  background-color: #2a579a;
+}
+.sk-blue-gray .main-header>.logo>.fa-bars:hover,
+.sk-blue-gray .main-header>.logo>.fa-bars:focus,
+.sk-blue-gray .main-header>.custom-menu li.open,
+.sk-blue-gray .main-header>.custom-menu li:hover,
+.sk-blue-gray .main-header>.custom-menu li:focus{
+	background-color: #264e8a;
+}
+.sk-blue-gray .main-sidebar{
+	border-right: 1px solid #d2d6de;
+	background-color: #e3e7ec;
+}
+.sk-blue-gray .main-sidebar,
+.sk-blue-gray .main-sidebar .user-info>a,
+.sk-blue-gray .main-sidebar>.sidebar-menu>li>a,
+.sk-blue-gray .main-sidebar>.sidebar-menu>li>.sidebar-submenu li>a{
+	color: #555;
+}
+.sk-blue-gray .main-sidebar>.sidebar-menu>li:hover>a,
+.sk-blue-gray .main-sidebar>.sidebar-menu>li>.sidebar-submenu,
+.sk-blue-gray .main-sidebar>.sidebar-menu>li>.sidebar-submenu li>a:hover,
+.sk-blue-gray .main-sidebar>.sidebar-menu>li.active>a,
+.sk-blue-gray .main-sidebar>.sidebar-menu>li>.sidebar-submenu li.active>a{
+  background-color: #eaedf1;
+}
+.sk-blue-gray .main-sidebar>.sidebar-menu>li:hover>a,
+.sk-blue-gray .main-sidebar>.sidebar-menu>li>.sidebar-submenu li>a:hover,
+.sk-blue-gray .main-sidebar>.sidebar-menu>li.active>a,
+.sk-blue-gray .main-sidebar>.sidebar-menu>li>.sidebar-submenu li.active>a{
+	color: #000;
+}
+.sk-blue-gray .main-sidebar>.sidebar-menu>li>.sidebar-submenu li.menu-leaf.active>a{
+  background-color: #fff;
+}
+    
+/* 主题绿色样式 */
+.sk-green .main-header>.logo>.fa-bars:hover,
+.sk-green .main-header>.logo>.fa-bars:focus,
+.sk-green .main-header>.custom-menu li.open,
+.sk-green .main-header>.custom-menu li:hover,
+.sk-green .main-header>.custom-menu li:focus{
+  background-color: #008d4c;
+}
+.sk-green .main-sidebar{
+	background-color: #263238;
+}
+.sk-green .main-sidebar>.sidebar-menu>li>a{
+	color: #b8c7ce;
+}
+.sk-green .main-sidebar>.sidebar-menu>li>.sidebar-submenu li>a{
+	color: #abb1b7;
+}
+.sk-green .main-sidebar>.sidebar-menu>li:hover>a,
+.sk-green .main-sidebar>.sidebar-menu>li>.sidebar-submenu,
+.sk-green .main-sidebar>.sidebar-menu>li>.sidebar-submenu li>a:hover,
+.sk-green .main-sidebar>.sidebar-menu>li.active>a,
+.sk-green .main-sidebar>.sidebar-menu>li>.sidebar-submenu li.active>a{
+  background-color: #2c3b41;
+}
+.sk-green .main-header,
+.sk-green .main-sidebar,
+.sk-green .main-sidebar .user-info>a,
+.sk-green .main-sidebar>.sidebar-menu>li:hover>a,
+.sk-green .main-sidebar>.sidebar-menu>li>.sidebar-submenu li>a:hover,
+.sk-green .main-sidebar>.sidebar-menu>li.active>a,
+.sk-green .main-sidebar>.sidebar-menu>li>.sidebar-submenu li.active>a{
+	color: #fff;
+}
+.sk-green .main-header,
+.sk-green .main-sidebar>.sidebar-menu>li>.sidebar-submenu li.menu-leaf.active>a{
+  background-color: #00a65a;
+}   
+    
+/* 主题绿灰色样式 */
+.sk-green-gray .main-header{
+	color: #fff;
+  background-color: #00a65a;
+}
+.sk-green-gray .main-header>.logo>.fa-bars:hover,
+.sk-green-gray .main-header>.logo>.fa-bars:focus,
+.sk-green-gray .main-header>.custom-menu li.open,
+.sk-green-gray .main-header>.custom-menu li:hover,
+.sk-green-gray .main-header>.custom-menu li:focus{
+	background-color: #008d4c;
+}
+.sk-green-gray .main-sidebar{
+	border-right: 1px solid #d2d6de;
+	background-color: #e3e7ec;
+}
+.sk-green-gray .main-sidebar,
+.sk-green-gray .main-sidebar .user-info>a,
+.sk-green-gray .main-sidebar>.sidebar-menu>li>a,
+.sk-green-gray .main-sidebar>.sidebar-menu>li>.sidebar-submenu li>a{
+	color: #555;
+}
+.sk-green-gray .main-sidebar>.sidebar-menu>li:hover>a,
+.sk-green-gray .main-sidebar>.sidebar-menu>li>.sidebar-submenu,
+.sk-green-gray .main-sidebar>.sidebar-menu>li>.sidebar-submenu li>a:hover,
+.sk-green-gray .main-sidebar>.sidebar-menu>li.active>a,
+.sk-green-gray .main-sidebar>.sidebar-menu>li>.sidebar-submenu li.active>a{
+  background-color: #eaedf1;
+}
+.sk-green-gray .main-sidebar>.sidebar-menu>li:hover>a,
+.sk-green-gray .main-sidebar>.sidebar-menu>li>.sidebar-submenu li>a:hover,
+.sk-green-gray .main-sidebar>.sidebar-menu>li.active>a,
+.sk-green-gray .main-sidebar>.sidebar-menu>li>.sidebar-submenu li.active>a{
+	color: #000;
+}
+.sk-green-gray .main-sidebar>.sidebar-menu>li>.sidebar-submenu li.menu-leaf.active>a{
+  background-color: #fff;
+}
+
+/* 主题紫色样式 */
+.sk-purple .main-header>.logo>.fa-bars:hover,
+.sk-purple .main-header>.logo>.fa-bars:focus,
+.sk-purple .main-header>.custom-menu li.open,
+.sk-purple .main-header>.custom-menu li:hover,
+.sk-purple .main-header>.custom-menu li:focus{
+  background-color: #555299;
+}
+.sk-purple .main-sidebar{
+	background-color: #263238;
+}
+.sk-purple .main-sidebar>.sidebar-menu>li>a{
+	color: #b8c7ce;
+}
+.sk-purple .main-sidebar>.sidebar-menu>li>.sidebar-submenu li>a{
+	color: #abb1b7;
+}
+.sk-purple .main-sidebar>.sidebar-menu>li:hover>a,
+.sk-purple .main-sidebar>.sidebar-menu>li>.sidebar-submenu,
+.sk-purple .main-sidebar>.sidebar-menu>li>.sidebar-submenu li>a:hover,
+.sk-purple .main-sidebar>.sidebar-menu>li.active>a,
+.sk-purple .main-sidebar>.sidebar-menu>li>.sidebar-submenu li.active>a{
+  background-color: #2c3b41;
+}
+.sk-purple .main-header,
+.sk-purple .main-sidebar,
+.sk-purple .main-sidebar .user-info>a,
+.sk-purple .main-sidebar>.sidebar-menu>li:hover>a,
+.sk-purple .main-sidebar>.sidebar-menu>li>.sidebar-submenu li>a:hover,
+.sk-purple .main-sidebar>.sidebar-menu>li.active>a,
+.sk-purple .main-sidebar>.sidebar-menu>li>.sidebar-submenu li.active>a{
+	color: #fff;
+}
+.sk-purple .main-header,
+.sk-purple .main-sidebar>.sidebar-menu>li>.sidebar-submenu li.menu-leaf.active>a{
+  background-color: #605ca8;
+}   
+    
+/* 主题绿灰色样式 */
+.sk-purple-gray .main-header{
+	color: #fff;
+  background-color: #605ca8;
+}
+.sk-purple-gray .main-header>.logo>.fa-bars:hover,
+.sk-purple-gray .main-header>.logo>.fa-bars:focus,
+.sk-purple-gray .main-header>.custom-menu li.open,
+.sk-purple-gray .main-header>.custom-menu li:hover,
+.sk-purple-gray .main-header>.custom-menu li:focus{
+	background-color: #555299;
+}
+.sk-purple-gray .main-sidebar{
+	border-right: 1px solid #d2d6de;
+	background-color: #e3e7ec;
+}
+.sk-purple-gray .main-sidebar,
+.sk-purple-gray .main-sidebar .user-info>a,
+.sk-purple-gray .main-sidebar>.sidebar-menu>li>a,
+.sk-purple-gray .main-sidebar>.sidebar-menu>li>.sidebar-submenu li>a{
+	color: #555;
+}
+.sk-purple-gray .main-sidebar>.sidebar-menu>li:hover>a,
+.sk-purple-gray .main-sidebar>.sidebar-menu>li>.sidebar-submenu,
+.sk-purple-gray .main-sidebar>.sidebar-menu>li>.sidebar-submenu li>a:hover,
+.sk-purple-gray .main-sidebar>.sidebar-menu>li.active>a,
+.sk-purple-gray .main-sidebar>.sidebar-menu>li>.sidebar-submenu li.active>a{
+  background-color: #eaedf1;
+}
+.sk-purple-gray .main-sidebar>.sidebar-menu>li:hover>a,
+.sk-purple-gray .main-sidebar>.sidebar-menu>li>.sidebar-submenu li>a:hover,
+.sk-purple-gray .main-sidebar>.sidebar-menu>li.active>a,
+.sk-purple-gray .main-sidebar>.sidebar-menu>li>.sidebar-submenu li.active>a{
+	color: #000;
+}
+.sk-purple-gray .main-sidebar>.sidebar-menu>li>.sidebar-submenu li.menu-leaf.active>a{
+  background-color: #fff;
+}

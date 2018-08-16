@@ -1,0 +1,57 @@
+[
+	{
+		"id": 1,
+		"name": "普通员工",
+		"code": "common",
+		"sn": 1,
+		"isRole": 1,
+		"updTime": 1529920728212,
+		"description": "",
+		"status": 1
+	}, {
+		"id": 2,
+		"name": "部门主管",
+		"code": "manager",
+		"sn": 2,
+		"isRole": 1,
+		"updTime": 1529920728212,
+		"description": "",
+		"status": 1
+	}, {
+		"id": 3,
+		"name": "管理员",
+		"code": "admin",
+		"sn": 3,
+		"isRole": 1,
+		"updTime": 1529920728212,
+		"description": "",
+		"status": 1
+	}, {
+		"id": 4,
+		"name": "客服",
+		"code": "service",
+		"sn": 4,
+		"isRole": 1,
+		"updTime": 1529920728212,
+		"description": "",
+		"status": 1
+	}, {
+		"id": 5,
+		"name": "销售",
+		"code": "saler",
+		"sn": 5,
+		"isRole": 1,
+		"updTime": 1529920728212,
+		"description": "",
+		"status": 1
+	}, {
+		"id": 6,
+		"name": "律师",
+		"code": "lawyer",
+		"sn": 6,
+		"isRole": 1,
+		"updTime": 1529920728212,
+		"description": "",
+		"status": 1
+	}
+]

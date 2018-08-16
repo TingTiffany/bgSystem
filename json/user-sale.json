@@ -1,0 +1,242 @@
+[
+	{
+		"empId": 169,
+		"empNumber": "JK167",
+		"empName": "陈亚辉",
+		"orgIdName": "销售3部",
+		"postIdName": "电话销售",
+		"tel": "",
+		"mobile": "13266665061",
+		"email": "chenyahui@jiekelawyer.com"
+	}, {
+		"empId": 163,
+		"empNumber": "JK161",
+		"empName": "涂丹",
+		"orgIdName": "销售2部",
+		"postIdName": "网络销售",
+		"tel": "",
+		"mobile": "13554305135",
+		"email": "tudan@jiekelawyer.com"
+	}, {
+		"empId": 158,
+		"empNumber": "JK156",
+		"empName": "冯记超",
+		"orgIdName": "销售3部",
+		"postIdName": "电话销售",
+		"tel": "",
+		"mobile": "17512019054",
+		"email": "fengjichao@jiekelawyer.com"
+	}, {
+		"empId": 157,
+		"empNumber": "JK155",
+		"empName": "吾伊娜",
+		"orgIdName": "销售4部",
+		"postIdName": "电话销售",
+		"tel": "",
+		"mobile": "18699399221",
+		"email": "yina@jiekelawyer.com"
+	},
+	{
+		"empId": 156,
+		"empNumber": "JK154",
+		"empName": "余炳峰",
+		"orgIdName": "销售5部",
+		"postIdName": "电话销售",
+		"tel": "",
+		"mobile": "18138158533",
+		"email": "yubingfeng@jiekelawyer.com"
+	},
+	{
+		"empId": 155,
+		"empNumber": "JK153",
+		"empName": "李德妹",
+		"orgIdName": "销售3部",
+		"postIdName": "电话销售",
+		"tel": "",
+		"mobile": "18271552184",
+		"email": "lidemei@jiekelawyer.com"
+	}, {
+		"empId": 154,
+		"empNumber": "JK152",
+		"empName": "龚文海",
+		"orgIdName": "销售2部",
+		"postIdName": "电话销售",
+		"tel": "",
+		"mobile": "17748654771",
+		"email": "gongwenhai@jiekelawyer.com"
+	}, {
+		"empId": 153,
+		"empNumber": "JK151",
+		"empName": "曾彩云",
+		"orgIdName": "销售2部",
+		"postIdName": "电话销售",
+		"tel": "",
+		"mobile": "13510025515",
+		"email": "zengcaiyun@jiekelawyer.com"
+	},
+	{
+		"empId": 147,
+		"empNumber": "JK145",
+		"empName": "刘宏",
+		"orgIdName": "销售3部",
+		"postIdName": "电话网络销售",
+		"tel": "",
+		"mobile": "15811828752",
+		"email": "liuhong@jiekelawyer.com"
+	},
+	{
+		"empId": 146,
+		"empNumber": "JK144",
+		"empName": "郑保源",
+		"orgIdName": "销售5部",
+		"postIdName": "电话销售",
+		"tel": "",
+		"mobile": "17727402736",
+		"email": "zhengbaoyuan@jiekelawyer.com"
+	},
+	{
+		"empId": 145,
+		"empNumber": "JK143",
+		"empName": "李雪珊",
+		"orgIdName": "销售5部",
+		"postIdName": "电话销售",
+		"tel": "",
+		"mobile": "13790028195",
+		"email": "lixueshan@jiekelawyer.com"
+	},
+	{
+		"empId": 144,
+		"empNumber": "JK142",
+		"empName": "邓玉雍",
+		"orgIdName": "销售5部",
+		"postIdName": "电话销售",
+		"tel": "",
+		"mobile": "15918495770",
+		"email": "dengyuyong@jiekelawyer.com"
+	},
+	{
+		"empId": 143,
+		"empNumber": "JK141",
+		"empName": "游爱茹",
+		"orgIdName": "销售1部",
+		"postIdName": "电话销售",
+		"tel": "",
+		"mobile": "13417366954",
+		"email": "youairu@jiekelawyer.com"
+	},
+	{
+		"empId": 142,
+		"empNumber": "JK140",
+		"empName": "刘惠",
+		"orgIdName": "销售2部",
+		"postIdName": "电话销售",
+		"tel": "",
+		"mobile": "18825178283",
+		"email": "liuhui@jiekelawyer.com"
+	},
+	{
+		"empId": 139,
+		"empNumber": "JK137",
+		"empName": "李莎莎",
+		"orgIdName": "销售3部",
+		"postIdName": "电话销售",
+		"tel": "",
+		"mobile": "18676398357",
+		"email": "lishasha@jiekelawyer.com"
+	},
+	{
+		"empId": 137,
+		"empNumber": "JK135",
+		"empName": "赵兆林",
+		"orgIdName": "销售1部",
+		"postIdName": "电话销售",
+		"tel": "",
+		"mobile": "13632903691",
+		"email": "zhaozhaolin@jiekelawyer.com"
+	},
+	{
+		"empId": 136,
+		"empNumber": "JK134",
+		"empName": "乐伦琪",
+		"orgIdName": "销售1部",
+		"postIdName": "电话销售",
+		"tel": "",
+		"mobile": "18607948427",
+		"email": "lelunqi@jiekelawyer.com"
+	},
+	
+	{
+		"empId": 134,
+		"empNumber": "JK132",
+		"empName": "王俊涛",
+		"orgIdName": "销售1部",
+		"postIdName": "电话销售",
+		"tel": "",
+		"mobile": "18379781582",
+		"email": "wangjuntao@layer.com"
+	},
+	{
+		"empId": 133,
+		"empNumber": "JK131",
+		"empName": "蒋炳南",
+		"orgIdName": "销售1部",
+		"postIdName": "电话销售",
+		"tel": "",
+		"mobile": "13713767348",
+		"email": "jiangbingnan@jiekelawyer.com"
+	},{
+		"empId": 116,
+		"empNumber": "JK114",
+		"empName": "李丽萍",
+		"tel": "",
+		"mobile": "18825830612",
+		"email": "liliping@jiekelawyer.com",
+		"orgIdName": "销售4部",
+		"postIdName": "网络销售"
+	},{
+		"empId": 103,
+		"empNumber": "JK101",
+		"empName": "林雪玲",
+		"tel": "",
+		"mobile": "13418556392",
+		"email": "linxueling@jiekelawyer.com",
+		"orgIdName": "销售5部",
+		"postIdName": "网络销售"
+	}, {
+		"empId": 100,
+		"empNumber": "JK098",
+		"empName": "黎颖文",
+		"tel": "",
+		"mobile": "13168751289",
+		"email": "liyingwen@jiekelawyer.com",
+		"orgIdName": "销售4部",
+		"postIdName": "法务经理"
+	}, {
+		"empId": 99,
+		"empNumber": "JK097",
+		"empName": "丘莲娣",
+		"tel": "",
+		"mobile": "15975579016",
+		"email": "qiuliandi@jiekelawyer.com",
+		"orgIdName": "销售5部",
+		"postIdName": "法务经理"
+	}, {
+		"empId": 95,
+		"empNumber": "JK093",
+		"empName": "王君",
+		"tel": "",
+		"mobile": "18124784009",
+		"email": "wangjun@jiekelawyer.com",
+		"orgIdName": "销售5部",
+		"postIdName": "网络销售"
+	}, {
+		"empId": 94,
+		"empNumber": "JK092",
+		"empName": "卢春莉",
+		"tel": "",
+		"mobile": "15637846715",
+		"email": "luchunli@jiekelawyer.com",
+		"orgIdName": "销售4部",
+		"postIdName": "网络销售"
+	}
+]

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<title></title>
+		<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="plugins/bootstrap-table/css/bootstrap-table.css" />
+  	<link rel="stylesheet" href="https://cdn.bootcss.com/jquery-treegrid/0.2.0/css/jquery.treegrid.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="plugins/bootstrap/js/html5shiv.js"></script>
+		<script type="text/javascript" src="plugins/bootstrap/js/respond.min.js"></script>
+  	<![endif]-->
+	</head>
+	<body>
+		<div class="pannel-cont">
+			<div class="cont-right">
+				<div class="pannel-navbar clearfix">
+					<div class="navbar-header pull-left">
+						<i class="fa fa-clock-o"></i>
+						<span>作业调度</span>
+					</div>
+					<div class="navbar-btns pull-right">
+						<button class="btn btn-default pull-left btn-startTimer" title="启动定时器">
+							<i class="fa fa-play"></i><span>启动定时器</span>
+						</button>
+						<button class="btn btn-default pull-left btn-stopTimer" title="停止定时器">
+							<i class="fa fa-stop"></i><span>停止定时器</span>
+						</button>
+						<button class="btn btn-default pull-left" title="作业调度日志" data-url="scheduleLog.html" data-tab-id="scheduleLog" data-back-id="tab15">
+							<i class="fa fa-file-text-o"></i><span>调度日志</span>
+						</button>
+						<button class="btn btn-default pull-left" title="新增作业调度" data-url="operateSchedule.html?typ=add" data-tab-id="addSchedule" data-back-id="tab15">
+							<i class="fa fa-plus"></i><span>新增</span>
+						</button>
+					</div>
+				</div>
+				<div class="pannel-body">
+					<div class="pannel-view">
+						<table id="tree-tbl" class="pannel-tbl"></table>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js" ></script>
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery.cookie/1.4.1/jquery.cookie.min.js" ></script>
+		<script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="plugins/bootstrap-table/js/bootstrap-table.js"></script>
+		<script type="text/javascript" src="plugins/bootstrap-table/js/bootstrap-table-zh-CN.js"></script>
+		<script type="text/javascript" src="plugins/bootstrap-table/js/bootstrap-table-treegrid.min.js"></script>
+		<script type="text/javascript" src="https://cdn.bootcss.com/jquery-treegrid/0.2.0/js/jquery.treegrid.min.js"></script>
+		<script type="text/javascript" src="js/tool.js" ></script>
+		<script type="text/javascript" src="js/jobSchedule.js" ></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+	</body>
+</html>

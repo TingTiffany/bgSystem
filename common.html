@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<title>系统</title>
+		<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="plugins/bootstrap-table/css/bootstrap-table.css" />
+		<link rel="stylesheet" href="plugins/ztree/css/zTreeStyle.css" />
+		<link rel="stylesheet" href="plugins/dialog/css/ui-dialog.css" />
+		<link rel="stylesheet" href="plugins/webUploader/css/webuploader.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/theme.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="plugins/bootstrap/js/html5shiv.js"></script>
+		<script type="text/javascript" src="plugins/bootstrap/js/respond.min.js"></script>
+  	<![endif]-->
+	</head>
+	<body class="sk-blue-gray">
+		<div class="main-header clearfix">
+			<div class="logo text-center pull-left">
+				<i class="fa fa-bars pull-left"></i>
+				<b>System</b>
+			</div>
+			<div class="custom-menu pull-right">
+				<ul class="clearfix">
+					<li class="pull-left">
+						<div id="theme" title="切换主题">
+							<i class="fa fa-dashboard"></i>
+						</div>
+					</li>
+					<li class="pull-left dropdown">
+						<div id="language" data-toggle="dropdown" title="切换语言">
+							<i class="fa fa-globe"></i>
+						</div>
+						<ul class="dropdown-menu" aria-labelledby="language">
+							<li><a href="javascript:;">简体中文</a></li>
+							<li><a href="javascript:;">繁体中文</a></li>
+							<li><a href="javascript:;">英文</a></li>
+						</ul>
+					</li>
+					<li class="pull-left dropdown">
+						<div id="user" data-toggle="dropdown">
+							<i class="fa fa-user-circle-o"></i>
+							<span>管理员</span>
+						</div>
+						<ul class="dropdown-menu" aria-labelledby="user">
+							<li>
+								<a href="javascript:;">
+									<i class="fa fa-user"></i>
+									<span>个人中心</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<i class="fa fa-lock"></i>
+									<span>修改密码</span>
+								</a>
+							</li>
+							<li id="signOut">
+								<a href="javascript:;">
+									<i class="fa fa-sign-out"></i>
+									<span>退出系统</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="main-sidebar">
+			<div class="user-panel clearfix">
+				<div class="pull-left user-img">
+					<i class="fa fa-user-circle-o"></i>
+				</div>
+				<div class="user-info">
+					<p>管理员</p>
+					<a href="javascript:;">
+						<i class="fa fa-circle text-success"></i>
+						在线
+					</a>
+					<a href="javascript:;">
+						<i class="fa fa-sign-out text-danger"></i>
+						注销
+					</a>
+				</div>
+			</div>
+			<ul class="sidebar-menu">
+				<li class="menu-open">
+					<a href="javascript:;" title="系统管理">
+						<i class="fa fa-cog text-center"></i>
+						<span>系统管理</span>
+						<i class="fa fa-angle-right pull-right"></i>
+					</a>
+					<ul class="sidebar-submenu">
+						<li>
+							<a href="javascript:;" title="组织管理">
+								<i class="fa fa-sitemap text-center"></i>
+								<span>组织管理</span>
+								<i class="fa fa-angle-right pull-right"></i>
+							</a>
+							<ul class="sidebar-submenu">
+								<li class="menu-leaf">
+									<a href="javascript:;" title="用户管理" data-tab-id="tab1" data-url="user.html">
+										<i class="fa fa-user-o text-center"></i>
+										<span>用户管理</span>
+									</a>
+								</li>
+								<li class="menu-leaf">
+									<a href="javascript:;" title="机构管理" data-tab-id="tab2" data-url="org.html">
+										<i class="fa fa-sitemap text-center"></i>
+										<span>机构管理</span>
+									</a>
+								</li>
+								<li class="menu-leaf">
+									<a href="javascript:;" title="岗位管理" data-tab-id="tab3" data-url="post.html">
+										<i class="fa fa-trophy text-center"></i>
+										<span>岗位管理</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:;" title="权限管理">
+								<i class="fa fa-dropbox text-center"></i>
+								<span>权限管理</span>
+								<i class="fa fa-angle-right pull-right"></i>
+							</a>
+							<ul class="sidebar-submenu">
+								<li class="menu-leaf">
+									<a href="javascript:;" title="菜单管理" data-tab-id="tab4" data-url="menu.html">
+										<i class="fa fa-bars text-center"></i>
+										<span>菜单管理</span>
+									</a>
+								</li>
+								<li class="menu-leaf">
+									<a href="javascript:;" title="角色管理" data-tab-id="tab5" data-url="role.html">
+										<i class="fa fa-users text-center"></i>
+										<span>角色管理</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:;" title="系统设置">
+								<i class="fa fa-cog text-center"></i>
+								<span>系统设置</span>
+								<i class="fa fa-angle-right pull-right"></i>
+							</a>
+							<ul class="sidebar-submenu">
+								<li class="menu-leaf">
+									<a href="javascript:;" title="参数设置" data-tab-id="tab6" data-url="param.html">
+										<i class="fa fa-wrench text-center"></i>
+										<span>参数设置</span>
+									</a>
+								</li>
+								<li class="menu-leaf">
+									<a href="javascript:;" title="字典管理" data-tab-id="tab7" data-url="dictionary.html">
+										<i class="fa fa-dropbox text-center"></i>
+										<span>字典管理</span>
+									</a>
+								</li>
+								<li class="menu-leaf">
+									<a href="javascript:;" title="行政区域" data-tab-id="tab8" data-url="area.html">
+										<i class="fa fa-map-o text-center"></i>
+										<span>行政区域</span>
+									</a>
+								</li>
+								<li class="menu-leaf">
+									<a href="javascript:;" title="国际化管理" data-tab-id="tab9" data-url="language.html">
+										<i class="fa fa-globe text-center"></i>
+										<span>国际化管理</span>
+									</a>
+								</li>
+								<li class="menu-leaf">
+									<a href="javascript:;" title="编号管理" data-tab-id="tab10" data-url="number.html">
+										<i class="fa fa-list text-center"></i>
+										<span>编号管理</span>
+									</a>
+								</li>
+								<li class="menu-leaf">
+									<a href="javascript:;" title="假期管理" data-tab-id="tab11" data-url="holiday.html">
+										<i class="fa fa-calendar text-center"></i>
+										<span>假期管理</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:;" title="系统监控">
+								<i class="fa fa-eye text-center"></i>
+								<span>系统监控</span>
+								<i class="fa fa-angle-right pull-right"></i>
+							</a>
+							<ul class="sidebar-submenu">
+								<li class="menu-leaf">
+									<a href="javascript:;" title="访问日志" data-tab-id="tab12" data-url="visitLog.html">
+										<i class="fa fa-bug text-center"></i>
+										<span>访问日志</span>
+									</a>
+								</li>
+								<li class="menu-leaf">
+									<a href="javascript:;" title="登录日志" data-tab-id="tab13" data-url="loginLog.html">
+										<i class="fa fa-sign-in text-center"></i>
+										<span>登录日志</span>
+									</a>
+								</li>
+								<li class="menu-leaf">
+									<a href="javascript:;" title="在线用户" data-tab-id="tab14" data-url="onlineUser.html">
+										<i class="fa fa-users text-center"></i>
+										<span>在线用户</span>
+									</a>
+								</li>
+								<li class="menu-leaf">
+									<a href="javascript:;" title="作业调度" data-tab-id="tab15" data-url="jobSchedule.html">
+										<i class="fa fa-clock-o text-center"></i>
+										<span>作业调度</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:;" title="研发工具">
+								<i class="fa fa-code text-center"></i>
+								<span>研发工具</span>
+								<i class="fa fa-angle-right pull-right"></i>
+							</a>
+							<ul class="sidebar-submenu">
+								<li class="menu-leaf">
+									<a href="javascript:;" title="代码生成" data-tab-id="tab16" data-url="code.html">
+										<i class="fa fa-code text-center"></i>
+										<span>代码生成</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="main-cont">
+			<div class="nav-tab">
+				<div class="tab-arrow tab-arrow-left text-center hidden">
+					<i class="fa fa-chevron-left"></i>
+				</div>
+				<div class="tab-arrow tab-arrow-right text-center hidden">
+					<i class="fa fa-chevron-right"></i>
+				</div>
+				<div class="tab-cont">
+					<ul class="clearfix">
+						<li class="pull-left active" id="tab">
+							<div class="title pull-left">
+								<i class="fa fa-home"></i>
+								首页
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="tab-pannel">
+				<div class="loading-layer hidden">
+					<div class="loading-cont">
+						<img src="img/loading.gif"/>
+						<span></span>
+					</div>
+				</div>
+				<iframe id="iframe-tab" src="index.html" width="100%" height="100%" frameborder="0"></iframe>
+			</div>
+		</div>
+		<div class="right-menu">
+			<ul>
+				<li typ="refresh">刷新页面</li>
+				<li typ="closeLeft">关闭左侧</li>
+				<li typ="closeRight">关闭右侧</li>
+				<li typ="closeOthers">关闭其他</li>
+			</ul>
+		</div>
+		<script type="text/javascript" src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js" ></script>
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery.cookie/1.4.1/jquery.cookie.min.js" ></script>
+		<script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="plugins/ztree/js/jquery.ztree.core.min.js"></script>
+		<script type="text/javascript" src="plugins/ztree/js/jquery.ztree.exhide.min.js"></script>
+		<script type="text/javascript" src="plugins/ztree/js/fuzzysearch.min.js"></script>
+		<script type="text/javascript" src="plugins/dialog/js/dialog-plus.js" ></script>
+    <script type="text/javascript" src="plugins/webUploader/js/webuploader.min.js"></script>
+		<script type="text/javascript" src="js/tool.js" ></script>
+    <script type="text/javascript" src="plugins/webUploader/js/upload.js"></script>
+		<script type="text/javascript" src="js/common.js" ></script>
+	</body>
+</html>

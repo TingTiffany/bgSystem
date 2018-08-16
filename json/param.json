@@ -1,0 +1,73 @@
+[
+{
+	"id": 1,
+	"name": "研发工具-代码生成默认包名",
+	"key": "modules",
+	"keyname": "gen.defaultPackageName",
+	"isSystem": 0,
+	"description": "新建项目后，修改该键值，在生成代码的时候就不要再修改了"
+}, {
+	"id": 2,
+	"name": "账号自助-是否开启用户注册功能",
+	"key": "true",
+	"keyname": "sys.account.registerUser",
+	"isSystem": 0,
+	"description": "是否开启注册用户功能"
+}, {
+	"id": 3,
+	"name": "账号自助-允许自助注册的用户类型",
+	"key": "-1",
+	"keyname": "sys.account.registerUser.userTypes",
+	"isSystem": 0,
+	"description": "允许注册的用户类型（多个用逗号隔开，如果注册时不选择用户类型，则第一个为默认类型）"
+}, {
+	"id": 4,
+	"name": "账号自助-验证码有效时间（分钟）",
+	"key": "10",
+	"keyname": "sys.account.validCodeTimeout",
+	"isSystem": 0,
+	"description": "找回密码时，短信/邮件验证码有效时间（单位：分钟，0表示不限制）"
+}, {
+	"id": 5,
+	"name": "主框架页-桌面仪表盘首页地址",
+	"key": "/desktop",
+	"keyname": "sys.index.desktopUrl",
+	"isSystem": 0,
+	"description": "主页面的第一个页签首页桌面地址"
+}, {
+	"id": 6,
+	"name": "主框架页-侧边栏的默认显示样式",
+	"key": "1",
+	"keyname": "sys.index.sidebarStyle",
+	"isSystem": 0,
+	"description": "1：默认显示侧边栏；2：默认折叠侧边栏"
+}, {
+	"id": 7,
+	"name": "主框架页-默认皮肤样式名称",
+	"key": "skin-blue-light",
+	"keyname": "sys.index.skinName",
+	"isSystem": 0,
+	"description": "skin-black-light、skin-black、skin-blue-light、skin-blue、skin-green-light、skin-green、skin-purple-light、skin-purple、skin-red-light、skin-red、skin-yellow-light、skin-yellow"
+}, {
+	"id": 8,
+	"name": "用户登录-登录失败多少次数后锁定账号",
+	"key": "200",
+	"keyname": "sys.login.failedNumAfterLockAccount",
+	"isSystem": 0,
+	"description": "登录失败多少次数后锁定账号"
+}, {
+	"id": 9,
+	"name": "用户登录-登录失败多少次数后锁定账号的时间",
+	"key": "20",
+	"keyname": "sys.login.failedNumAfterLockMinute",
+	"isSystem": 0,
+	"description": "锁定账号的时间（单位：分钟）"
+}, {
+	"id": 10,
+	"name": "用户登录-登录失败多少次数后显示验证码",
+	"key": "100",
+	"keyname": "sys.login.failedNumAfterValidCode",
+	"isSystem": 0,
+	"description": "设置为0强制使用验证码登录"
+}
+]

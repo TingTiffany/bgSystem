@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<title></title>
+		<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="plugins/bootstrap-table/css/bootstrap-table.css" />
+  	<link rel="stylesheet" href="https://cdn.bootcss.com/jquery-treegrid/0.2.0/css/jquery.treegrid.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="plugins/bootstrap/js/html5shiv.js"></script>
+		<script type="text/javascript" src="plugins/bootstrap/js/respond.min.js"></script>
+  	<![endif]-->
+	</head>
+	<body>
+		<div class="pannel-cont">
+			<div class="cont-right">
+				<div class="pannel-navbar clearfix">
+					<div class="navbar-header pull-left">
+						<i class="fa fa-clock-o"></i>
+						<span>调度日志查询</span>
+					</div>
+					<div class="navbar-btns pull-right">
+						<button class="btn btn-default pull-left btn-showHide">
+							<i class="fa fa-filter"></i><span>隐藏</span>
+						</button>
+					</div>
+				</div>
+				<div class="pannel-body">
+					<div class="pannel-search clearfix">
+						<div class="search-group pull-left">
+							<span class="pull-left">任务名称：</span>
+							<input type="text" class="pull-left width-120" name="taskNam" autocomplete="off" />
+						</div>
+						<div class="search-group pull-left">
+							<span class="pull-left">任务组名：</span>
+							<input type="text" class="pull-left width-120" name="groupNam" autocomplete="off" />
+						</div>
+						<div class="search-group pull-left">
+							<span class="pull-left">日志类型：</span>
+							<div class="control-select width-100 pull-left" name="logTyp">
+								<div class="select-val">
+									<input type="text" readonly="readonly" name="logTyp" autocomplete="off" />
+									<i class="fa fa-caret-down"></i>
+								</div>
+								<div class="select-list">
+									<input type="text" />
+									<ul>
+										<li class="seld" val=""></li>
+										<li val="1">计划日志</li>
+										<li val="2">任务日志</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="search-group pull-left">
+							<span class="pull-left">日志事件：</span>
+							<div class="control-select width-100 pull-left" name="logEvent">
+								<div class="select-val">
+									<input type="text" readonly="readonly" name="logEvent" autocomplete="off" />
+									<i class="fa fa-caret-down"></i>
+								</div>
+								<div class="select-list">
+									<input type="text" />
+									<ul>
+										<li class="seld" val=""></li>
+										<li val="1">计划创建</li>
+										<li val="2">计划移除</li>
+										<li val="3">计划暂停</li>
+										<li val="4">计划恢复</li>
+										<li val="5">调度错误</li>
+										<li val="6">任务执行</li>
+										<li val="7">任务结束</li>
+										<li val="8">任务停止</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="search-group pull-left">
+							<span class="pull-left">日志信息：</span>
+							<input type="text" class="pull-left width-150" name="logInfo" autocomplete="off" />
+						</div>
+						<div class="search-group pull-left">
+							<span class="pull-left">是否异常：</span>
+							<div class="control-select width-80 pull-left" name="isNormal">
+								<div class="select-val">
+									<input type="text" readonly="readonly" name="isNormal" autocomplete="off" />
+									<i class="fa fa-caret-down"></i>
+								</div>
+								<div class="select-list">
+									<input type="text" />
+									<ul>
+										<li class="seld" val=""></li>
+										<li val="1">是</li>
+										<li val="0">否</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="search-group pull-left">
+							<button class="btn btn-primary btn-search pull-left">查询</button>
+							<button class="btn btn-default btn-reset pull-left">重置</button>
+						</div>
+					</div>
+					<div class="pannel-view">
+						<table id="tree-tbl" class="pannel-tbl"></table>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js" ></script>
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery.cookie/1.4.1/jquery.cookie.min.js" ></script>
+		<script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="plugins/bootstrap-table/js/bootstrap-table.js"></script>
+		<script type="text/javascript" src="plugins/bootstrap-table/js/bootstrap-table-zh-CN.js"></script>
+		<script type="text/javascript" src="plugins/bootstrap-table/js/bootstrap-table-treegrid.min.js"></script>
+		<script type="text/javascript" src="https://cdn.bootcss.com/jquery-treegrid/0.2.0/js/jquery.treegrid.min.js"></script>
+		<script type="text/javascript" src="js/tool.js" ></script>
+		<script type="text/javascript" src="js/scheduleLog.js" ></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+	</body>
+</html>

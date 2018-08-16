@@ -1,0 +1,243 @@
+html, body{
+	height: 100%;
+	font-family: "微软雅黑";
+	overflow: hidden;
+}
+body.login-main{
+	background-color: #e3e7ec;
+}
+ul, li{
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+}
+a, a:hover, a:focus{
+	text-decoration: none;
+}
+
+/*登录页样式start*/
+.login-cont{
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	width: 320px;
+	margin-top: -182px;
+	margin-left: -160px;
+}
+.login-cont>.login-logo{
+  margin-bottom: 25px;
+  font-size: 35px;
+  font-weight: 300;
+  text-align: center;
+}
+.login-cont>.login-logo b{
+	color: #666;
+}
+.login-cont>.login-box{
+  padding: 28px;
+  color: #666;
+  box-shadow: 0 2px 6px #999;
+  border-radius: 5px;
+  background: #fff;
+}
+.login-box .box-line{
+	position: relative;
+	margin-bottom: 23px;
+}
+.login-box .box-line>input{
+	position: relative;
+	width: 100%;
+	height: 34px;
+	padding-right: 34px;
+  padding: 4px 10px;
+  border: 1px solid #d2d6de;
+  outline: none;
+}
+.login-box .box-line>.fa{
+	position: absolute;
+	display: inline-block;
+	top: 0px;
+	right: 0px;
+	width: 34px;
+	height: 34px;
+	line-height: 34px;
+	font-size: 18px;
+	text-align: center;
+	color: rgb(210, 214, 222);
+}
+.login-box .box-line>input[type="text"]:focus{
+	border-color: #3c8dbc;
+} 
+.login-box .box-line>input[type="text"]:focus + .fa{
+	color: rgb(99, 160, 197);
+}
+.login-box .box-line.error>input{
+	border-color: #e02222;
+}
+.login-box .box-line.error>.fa{
+	color: #ff6969;
+}
+.login-box .box-line>.login-check{
+  display: inline-block;
+  position: relative;
+  width: 81px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  font-weight: 100;
+}
+.box-line>.login-check>input{
+  position: absolute;
+	display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-top: 0px;
+}
+.box-line>.login-check>span{
+  display: inline-block;
+  position: relative;
+  left: 25px;
+  line-height: 20px;
+}
+.login-box .box-line>.btn{
+	width: 100%;
+	padding: 5px 12px;
+	text-align: center;
+}
+.login-box #language{
+	color: #337ab7;
+	cursor: pointer;
+}
+.login-box #language:hover,
+.login-box #language:focus{
+	color: #23527c;	
+}
+.login-box #language>.fa{
+	margin-right: 5px;
+}
+/*登录页样式end*/
+
+/*找回密码页样式start*/
+.forgetPwd .login-box .box-line>.fa{
+	font-size: 14px;
+	color: #777;
+}
+.forgetPwd .box-line.code>span{
+	height: 34px;
+	line-height: 34px;
+  border: 1px solid #d2d6de;
+}
+.forgetPwd .box-line.code>span:first-child{
+  padding-left: 4px;
+  padding-right: 5px;
+  border-right: 0;
+}
+.forgetPwd .box-line.code>span:last-child{
+  border-left: 0;
+}
+.forgetPwd .box-line.code>input{
+	width: 40%;
+}
+.forgetPwd .box-line.code img{
+	width: 91px;
+}
+.forgetPwd .box-line.phoneCode>input[type="text"],
+.forgetPwd .box-line.emailCode>input[type="text"]{
+	width: 60%;
+}
+.forgetPwd .box-line.phoneCode>.btn,
+.forgetPwd .box-line.emailCode>.btn{
+	width: 40%;
+  border-left: 0;
+}
+.forgetPwd .login-box .btn{
+	width: 100%;
+	padding: 5px 12px;
+	text-align: center;
+	border-radius: 0;
+}
+.control-select{
+	position: relative;
+	width: 100%;
+}
+.control-select>.select-val{
+	position: relative;
+	width: 100%;
+	z-index: 1002;
+}
+.control-select>.select-val>input{
+	width: 100%;
+	height: 34px;
+	padding: 0px 20px 0px 10px;
+	line-height: 34px;
+	border: 1px solid #d2d6de;
+}
+.control-select>.select-val>.fa{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 20px;
+	line-height: 34px;
+	text-align: center;
+}
+.control-select>.select-list{
+	display: none;
+	position: absolute;
+	top: 29px;
+	width: 100%;
+	padding: 4px;
+	z-index: 1001;
+	border: 1px solid #d2d6de;
+	background-color: #fff;
+}
+.control-select>.select-list>input{
+	width: 100%;
+	height: 28px;
+	padding: 3px 4px;
+	border: 1px solid #3c8dbc;
+	outline: none;
+}
+.control-select>.select-list>ul{
+	max-height: 260px;
+	margin: 4px -4px -4px -4px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.control-select>.select-list>ul>li{
+	height: 26px;
+	padding: 4px 6px;
+	cursor: pointer;
+}
+.control-select>.select-list>ul>li.seld,
+.control-select>.select-list>ul>li.seld:hover{
+	color: #444;
+	background-color: #ddd;
+}
+.control-select>.select-list>ul>li:hover{
+	color: #fff;
+	background-color: #3c8dbc;
+}
+/*找回密码页样式end*/
+
+/*提示工具 样式start*/
+.alert-container{
+	position: fixed;
+	right: 0px;
+  bottom: 0px;
+  width: 300px;
+  z-index: 9999;
+}
+.alert>.fa{
+  margin-right: 8px;
+  font-size: 26px;
+  vertical-align: middle;
+}
+.tooltip.bottom{
+	margin-top: -5px;
+}
+.tooltip.bottom .tooltip-arrow{
+	border-bottom-color: #ff6969;
+}
+.tooltip.bottom .tooltip-inner{
+	background-color: #ff6969;
+}
+/*提示工具 样式end*/
